@@ -54,6 +54,9 @@ header{
 .row > *{
     margin-top: 20px;
 }
+.row .card{
+    height: 100%;
+}
 
 .header-left button{
     margin-right: 2rem;
@@ -104,6 +107,7 @@ header{
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    cursor: pointer;
 }
 .header-right i{
     font-size: 1.5rem;
@@ -120,6 +124,40 @@ header{
     position: absolute;
     top: -17px;
     left: 15px;
+}
+.header-right .dropdown-top{
+    padding: 10px;
+    font-size: 15px;
+}
+.header-right .dropdown-top p{
+    margin: 0;
+}
+
+.header-right .notification-container .dropdown-menu{
+    min-width: 350px;
+    height: 400px;
+    overflow-y: scroll;
+}
+.header-right .notification-container .user{
+    display: flex;
+    padding: 10px;
+}
+.header-right .notification-container .user-info{
+    margin-left: 15px;
+}
+.header-right .notification-container .user-info p{
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+.header-right .notification-container .user-info p span{
+    font-weight: bold;
+}
+.header-right .notification-container .comment{
+    display: flex;
+    align-items: center;
+}
+.header-right .notification-container .comment span{
+    margin-right: 10px;
 }
 
 
@@ -209,7 +247,7 @@ main .card h6{
 }
 
 
-.row-3 .card-header, .row-3 .card-footer, .row-4 .card-header, .row-4 .card-footer{
+.row-3 .card-header, .row-3 .card-footer, .row-5 .card-header, .row-5 .card-footer{
     background-color: transparent;
 }
 
@@ -289,12 +327,59 @@ main .card h6{
     font-weight: 600;
 }
 
-.row-4 canvas{
+
+.row-4 .bar1{
+    background-color: #154c94 !important;
+}
+.row-4 .bar2{
+    background-color: #19a8e0 !important;
+}
+.row-4 .bar3{
+    background-color: #18fcdd !important;
+}
+.row-4 .stats div{
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.row-4 .stats div span{
+    width: 13px;
+    height: 13px;
+    background-color: #00d27a;
+    display: inline-block;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+.row-4 .stats div:nth-child(1) span{
+    background-color: #154c94;
+}
+.row-4 .stats div:nth-child(2) span{
+    background-color: #19a8e0;
+}
+.row-4 .stats div:nth-child(3) span{
+    background-color: #18fcdd;
+}
+.row-4 .stats div:nth-child(4) span{
+    background-color: #cbdbf1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.row-5 canvas{
     height: 400px !important;
     width: 400px !important;
     font-size: 20px;
 }
-.row-4 .chart-wrapper{
+.row-5 .chart-wrapper{
     max-width: 400px;
     height: 400px;
 }

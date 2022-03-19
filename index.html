@@ -33,19 +33,94 @@
                     </div>
                 </div>
                 <div class="header-right d-flex align-items-center">
-                    <span class="shopping-basket">
-                        <i class="fas fa-shopping-basket"></i>
-                        <span class="badge bg-primary rounded-pill num">3</span>
-                    </span>
-                    <span class="notication">
-                        <span class="bell">
-                            <i class="fas fa-bell"></i>
-                            <span class="badge bg-danger rounded-pill num">5</span>
-                        </span>
-                        <span class="notify"></span>
-                    </span>
-                    <span><i class="material-icons">apps</i></span>
-                    <img src="images/1.f7d5569c.jpg" alt="">
+                    <div class="shopping-basket-container">
+                        <div class="dropdown">
+                            <span data-bs-toggle="dropdown" class="shopping-basket">
+                                <i class="fas fa-shopping-basket"></i>
+                                <span class="badge bg-primary rounded-pill num">3</span>
+                            </span>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <a href="#" class="dropdown-item">Set status</a>
+                                <a href="#" class="dropdown-item">Profile and Account</a>
+                                <a href="#" class="dropdown-item">Feedback</a>
+                                <h6 class="dropdown-divider"></h6>
+                                <a href="#" class="dropdown-item">Settings</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notification-container">
+                        <div class="dropdown">
+                            <span data-bs-toggle="dropdown" class="notication">
+                                <span class="bell">
+                                    <i class="fas fa-bell"></i>
+                                    <span class="badge bg-danger rounded-pill num">5</span>
+                                </span>
+                                <span class="notify"></span>
+                            </span>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <div class="dropdown-top d-flex align-items-center justify-content-between">
+                                    <p>Nofications</p>
+                                    <a href="#" class="text-primary">Mark all as read</a>
+                                </div>
+                                <h5 class="dropdown-header">NEW</h5>
+                                <div class="users">
+                                    <div class="user bg-light">
+                                        <img src="images/2.20b1aba3.jpg" alt="">
+                                        <div class="user-info">
+                                            <p><span class="name">Diran Sai</span> replied to your comment :"Hello World"  😍</p>
+                                            <p class="comment"><span><i class="material-icons">chat_bubble_outline</i></span> Just Now</p>
+                                        </div>
+                                    </div>
+                                    <div class="user">
+                                        <img src="images/5.3fdcffd4.jpg" alt="">
+                                        <div class="user-info">
+                                            <p><span class="name">John Doe</span> replied to your comment :"Are you coding"</p>
+                                            <p class="comment"><span><i class="material-icons">chat_bubble_outline</i></span> Just Now</p>
+                                        </div>
+                                    </div>
+                                    <div class="user bg-light">
+                                        <img src="images/5.3fdcffd4.jpg" alt="">
+                                        <div class="user-info">
+                                            <p><span class="name">Emma Watson</span> replied to your comment :"Missing you too" </p>
+                                            <p class="comment"><span><i class="material-icons">chat_bubble_outline</i></span> Just Now</p>
+                                        </div>
+                                    </div>
+                                    <h5 class="dropdown-header">EARLIER</h5>
+                                    <div class="user">
+                                        <img src="images/5.3fdcffd4.jpg" alt="">
+                                        <div class="user-info">
+                                            <p><span class="name">Linda Nchaba</span> commented on your post :"Happy Birthday"</p>
+                                            <p class="comment"><span><i class="material-icons">chat_bubble_outline</i></span> Just Now</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="apps">
+                        <div class="dropdown">
+                            <span data-bs-toggle="dropdown"><i class="material-icons">apps</i></span>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <a href="#" class="dropdown-item">Set status</a>
+                                <a href="#" class="dropdown-item">Profile and Account</a>
+                                <a href="#" class="dropdown-item">Feedback</a>
+                                <h6 class="dropdown-divider"></h6>
+                                <a href="#" class="dropdown-item">Settings</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="avatar">
+                        <div class="dropdown">
+                            <img src="images/1.f7d5569c.jpg" alt="" data-bs-toggle="dropdown">
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <a href="#" class="dropdown-item">Set status</a>
+                                <a href="#" class="dropdown-item">Profile and Account</a>
+                                <a href="#" class="dropdown-item">Feedback</a>
+                                <h6 class="dropdown-divider"></h6>
+                                <a href="#" class="dropdown-item">Settings</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </header>
             <aside class="py-1">
@@ -136,7 +211,15 @@
                         <div class="card">
                             <div class="card-header d-flex justify-content-between align-items-center">
                                 <h6>Active Users</h6>
-                                <button class="btn"><i class="material-icons">more_vert</i></button>
+                                <div class="dropdown">
+                                    <button class="btn" data-bs-toggle="dropdown"><i class="material-icons">more_vert</i></button>
+                                    <div class="dropdown-menu dropdown-menu-end">
+                                        <a href="#" class="dropdown-item">View</a>
+                                        <a href="#" class="dropdown-item">Export</a>
+                                        <h6 class="dropdown-divider"></h6>
+                                        <a href="#" class="dropdown-item text-danger">Remove</a>
+                                    </div>
+                                </div>
                             </div>
                             <div class="card-body">
                                 <div class="card-details">
@@ -200,7 +283,15 @@
                         <div class="card">
                             <div class="card-header d-flex justify-content-between align-items-center">
                                 <h6>Bandwidth Saved</h6>
-                                <button class="btn"><i class="material-icons">more_vert</i></button>
+                                <div class="dropdown">
+                                    <button class="btn" data-bs-toggle="dropdown"><i class="material-icons">more_vert</i></button>
+                                    <div class="dropdown-menu dropdown-menu-end">
+                                        <a href="#" class="dropdown-item">View</a>
+                                        <a href="#" class="dropdown-item">Export</a>
+                                        <h6 class="dropdown-divider"></h6>
+                                        <a href="#" class="dropdown-item text-danger">Remove</a>
+                                    </div>
+                                </div>
                             </div>
                             <div class="card-body text-center">
                                 <div class="loader mx-auto">93%</div>
@@ -222,6 +313,31 @@
                     </div>
                 </div>
                 <div class="row row-4 g-6 my-4">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-body">
+                                <h6>Using Storage 1466 MB of 2 GB</h6>
+                                <div class="progress">
+                                    <div class="progress-bar bar1" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar bg-success bar2" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar bg-info bar3" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="my-4 stats d-flex align-items-center">
+                                    <div><span></span> Regular</div>
+                                    <div><span></span> System</div>
+                                    <div><span></span> Shared</div>
+                                    <div><span></span> Free</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-5 g-6 my-4">
                     <div class="col-12">
                         <div class="card">
                             <div class="card-header d-flex align-items-center justify-content-between">
