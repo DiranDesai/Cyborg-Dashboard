@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+  <!-- Bootstrap CSS -->
+  <link href="bootstrap-5/css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Learning Web Development</title>
+</head>
+<body>
+    <section class="dashboard py-4">
+        <div class="container">
+            <header class="d-flex">
+                <div class="header-left d-flex align-items-center">
+                    <button class="btn"><i class="fas fa-bars"></i></button>
+                    <div class="d-flex align-items-center">
+                        <img src="images/falcon.fa3b1ec6.png" alt="">
+                        <h2>Cyborg</h2>
+                    </div>
+                </div>
+                <div class="header-center">
+                    <div class="search">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search...">
+                    </div>
+                </div>
+                <div class="header-right d-flex align-items-center">
+                    <span class="shopping-basket">
+                        <i class="fas fa-shopping-basket"></i>
+                        <span class="badge bg-primary rounded-pill num">3</span>
+                    </span>
+                    <span class="notication">
+                        <span class="bell">
+                            <i class="fas fa-bell"></i>
+                            <span class="badge bg-danger rounded-pill num">5</span>
+                        </span>
+                        <span class="notify"></span>
+                    </span>
+                    <span><i class="material-icons">apps</i></span>
+                    <img src="images/1.f7d5569c.jpg" alt="">
+                </div>
+            </header>
+            <aside class="py-1">
+                
+            </aside>
+            <main class="py-1">
+                <div class="row row-1 g-6">
+                    <div class="col-md-6">
+                        <div class="card p-2">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-6 col-md-8">
+                                        <div class="card-details">
+                                            <h6 class="muted">Weekly Sales</h6>
+                                            <h5 class="display-6">$47K</h5>
+                                            <span class="badge bg-success rounded-pill">+3.5%</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="loader">66%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card p-2">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-6 col-md-8">
+                                        <div class="card-details">
+                                            <h6 class="muted">Total Order</h6>
+                                            <h5 class="display-6">$58.4K</h5>
+                                            <span class="badge bg-primary rounded-pill">+13.5%</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="loader">86%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-2 g-6 my-4 align-items-stretch">
+                    <div class="col-md-8">
+                        <div class="card p-2">
+                            <div class="card-body">
+                                <div class="card-details">
+                                    <h6 class="muted">Weekly Sales</h6>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <ul>
+                                            <li>
+                                                <div><span class="status"></span>Samsung</div>
+                                                <span>50%</span>
+                                            </li>
+                                            <li>
+                                                <div><span class="status"></span>Huawei</div>
+                                                <span>21%</span>
+                                            </li>
+                                            <li>
+                                                <div><span class="status"></span>Apple</div>
+                                                <span>22%</span>
+                                            </li>
+                                        </ul>
+                                        <div class="loader">
+                                            <h5 class="display-4">26M</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card p-2">
+                            <div class="card-body">
+                                <div class="card-details">
+                                    <h6 class="muted">Total Order</h6>
+                                    <h5 class="display-6">$58.4K</h5>
+                                    <span class="badge bg-primary rounded-pill">+13.5%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-3 g-6 my-4">
+                    <div class="col-md-6 active">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <h6>Active Users</h6>
+                                <button class="btn"><i class="material-icons">more_vert</i></button>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-details">
+                                    <div class="users">
+                                        <div class="user d-flex">
+                                            <div class="profile">
+                                                <img src="images/5.3fdcffd4.jpg" alt="">
+                                                <span class="active-status"></span>
+                                            </div>
+                                            <div class="user-info">
+                                                <a href="#">Diran Sai</a>
+                                                <p>Admin</p>
+                                            </div>
+                                        </div>
+                                        <div class="user d-flex">
+                                            <div class="profile">
+                                                <img src="images/2.20b1aba3.jpg" alt="">
+                                                <span class="active-status"></span>
+                                            </div>
+                                            <div class="user-info">
+                                                <a href="#">Antony Hopkins</a>
+                                                <p>Moderator</p>
+                                            </div>
+                                        </div>
+                                        <div class="user d-flex">
+                                            <div class="profile">
+                                                <img src="images/3.b3477e97.jpg" alt="">
+                                                <span class="active-status"></span>
+                                            </div>
+                                            <div class="user-info">
+                                                <a href="#">Anna Karinina</a>
+                                                <p>Editor</p>
+                                            </div>
+                                        </div>
+                                        <div class="user d-flex">
+                                            <div class="profile">
+                                                <img src="images/3.ba98a1ec.jpg" alt="">
+                                                <span class="active-status"></span>
+                                            </div>
+                                            <div class="user-info">
+                                                <a href="#">Shepy Kamando</a>
+                                                <p>Admin</p>
+                                            </div>
+                                        </div>
+                                        <div class="user d-flex">
+                                            <div class="profile">
+                                                <img src="images/5.09ac6a83.jpg" alt="">
+                                                <span class="active-status"></span>
+                                            </div>
+                                            <div class="user-info">
+                                                <a href="#">Rowen Atkinson</a>
+                                                <p>Editor</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 bandwidth">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <h6>Bandwidth Saved</h6>
+                                <button class="btn"><i class="material-icons">more_vert</i></button>
+                            </div>
+                            <div class="card-body text-center">
+                                <div class="loader mx-auto">93%</div>
+                                <div class="bandwidth-info">
+                                    <h6><i class="fas fa-check"></i>35.75 GB saved</h6>
+                                    <p>38.44 GB total bandwidth</p>
+                                </div>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between align-items-center">
+                                <select class="form-select mb-3" aria-label=".form-select-lg example">
+                                    <option selected>Last 6 Month</option>
+                                    <option value="1">Last 6 Month</option>
+                                    <option value="2">Last Year</option>
+                                    <option value="3">Last 2 Year</option>
+                                </select>
+                                <button class="btn">Help</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-4 g-6 my-4">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header d-flex align-items-center justify-content-between">
+                                <h6>Top Products</h6>
+                                <div>
+                                    <a href="#">More Details</a>
+                                    <button class="btn"><i class="material-icons">more_vert</i></button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="chart-wrapper">
+                                    <canvas id="myChart" width="200px" height="200px"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </section>
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="scripts/script.js"></script>
+  <script src="bootstrap-5/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
