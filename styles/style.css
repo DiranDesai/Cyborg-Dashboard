@@ -33,7 +33,7 @@ body{
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-    background-color: #eff2f8;
+    /* background-color: #eff2f8; */
 }
 
 img{
