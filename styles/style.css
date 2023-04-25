@@ -44,7 +44,12 @@ a{
     text-decoration: none;
     color: white;
 }
-
+.dashboard{
+    transition: all 0.3s ease-in;
+}
+.dashboard-in{
+    margin-left: 300px;
+}
 
 header{
     justify-content: space-between;
@@ -173,6 +178,13 @@ main .card{
     box-shadow: 0 7px 14px 0 rgba(65,69,88,0.1),0 3px 6px 0 rgba(0,0,0,0.07);
     border-radius: 6px;
     border: none;
+}
+main .card.card-scale{
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+main .card.card-scale:hover{
+    transform: scale(1.05);
 }
 main .card h5{
     font-size: 1.5rem;

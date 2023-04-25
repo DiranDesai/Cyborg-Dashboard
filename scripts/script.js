@@ -19,3 +19,22 @@ const myChart = new Chart(ctx, {
         }
     }
 });
+
+
+
+const sideBarButton = document.querySelector(".sidebar-btn");
+const dashBoard = document.querySelector(".dashboard");
+
+let sideBarStatus = false;
+
+sideBarButton.addEventListener("click", handleSideBar);
+
+function handleSideBar() {
+    if (sideBarStatus) {
+        dashBoard.classList.remove("dashboard-in");
+        sideBarStatus = false;
+    } else {
+        dashBoard.classList.add("dashboard-in");
+        sideBarStatus = true;
+    }
+}
